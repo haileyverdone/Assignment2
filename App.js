@@ -1,6 +1,6 @@
 
 import "./App.css";
-import TicTacToe from "./components/TicTacToe";
+import TicTacToe from "./src/components/TicTacToe";
 
 
 function App() {
