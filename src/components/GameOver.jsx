@@ -3,7 +3,7 @@ import GameState from "./GameState";
 function GameOver({ gameState }) {
     switch(gameState){
         case GameState.inProgress:
-            return;
+            return <></>;
         case GameState.playerOwins:
             return <div className="game-over"> O Wins </div>
         case GameState.playerXwins:
@@ -11,7 +11,7 @@ function GameOver({ gameState }) {
         case GameState.draw:
             return <div className="game-over"> Draw </div>
         default:
-            return;
+            return <></>;
     }
 }
 

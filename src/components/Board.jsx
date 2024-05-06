@@ -1,7 +1,7 @@
 import Strike from "./Strike";
 import Tile from "./Tile";
 
-function Board( tiles, onTileClick, playerTurn, strikeClass) {
+function Board({tiles, onTileClick, playerTurn, strikeClass}) {
     return (
      <div className="board">
         <Tile 
@@ -57,8 +57,7 @@ function Board( tiles, onTileClick, playerTurn, strikeClass) {
         onClick={()=> onTileClick(8)} 
         value= {tiles[8]} 
         />
-        <Strike strikeClass = {strikeClass}
-        />
+        <Strike strikeClass = {strikeClass} />
     </div>
     );
 }

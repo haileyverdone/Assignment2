@@ -1,9 +1,11 @@
-function Reset(gameState, onReset) {
+import GameState from "./GameState";
+
+function Reset({gameState, onReset }) {
     if(gameState === gameState.inProgress){
         return;
     }
     return (
-        <button className="reset-button">
+        <button onClick= {onReset} className="reset-button">
         Play Again
         </button>
     );
