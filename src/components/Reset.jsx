@@ -4,7 +4,7 @@ function Reset(gameState, onReset) {
     }
     return (
         <button className="reset-button">
-        Reset 
+        Play Again
         </button>
     );
 }
